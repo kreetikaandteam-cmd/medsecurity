@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e7ac4" />
+    <meta name="description" content="On-demand home medical assistance for immobile patients. Book trained nurses, physiotherapists, diagnostics, and medication delivery to your home." />
+    <title>CareNow | On-Demand Home Medical Assistance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="CareNow Home">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3l8 6v10a2 2 0 0 1-2 2h-4v-6H10v6H6a2 2 0 0 1-2-2V9l8-6z" fill="#0e7ac4"/>
+            <path d="M14.5 10.5h-1v-1a1.5 1.5 0 1 0-3 0v1h-1a1.5 1.5 0 1 0 0 3h1v1a1.5 1.5 0 1 0 3 0v-1h1a1.5 1.5 0 1 0 0-3z" fill="#0e7ac4"/>
+          </svg>
+          <span>CareNow</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#booking" class="cta-link">Book now</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">On-demand home medical assistance for immobile patients</h1>
+            <p class="subtitle">Trusted nurses, physiotherapists, and diagnostics at your doorstep. Safe, fast, and affordable care at home.</p>
+            <div class="hero-cta">
+              <a href="#booking" class="btn btn-primary">Book a visit</a>
+              <a href="#services" class="btn btn-outline">Explore services</a>
+            </div>
+            <ul class="trust-badges" aria-label="Highlights">
+              <li>Verified professionals</li>
+              <li>Emergency-ready support</li>
+              <li>24/7 booking</li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="heartbeat"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title">Services at Home</h2>
+          <p class="section-lead">Personalized medical support for limited-mobility patients.</p>
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🩺</div>
+              <h3>Nursing care</h3>
+              <p>Wound dressing, IV/IM injections, catheter care, vitals monitoring, post-op care.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🧑‍🦽</div>
+              <h3>Physiotherapy</h3>
+              <p>Neuro, ortho, geriatric therapy plans designed for recovery and mobility.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">🧪</div>
+              <h3>Diagnostics</h3>
+              <p>Blood tests, ECG, and sample collection at home with digital reports.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">💊</div>
+              <h3>Medication delivery</h3>
+              <p>Prescription pickup and timely delivery with dosage guidance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section alt" aria-labelledby="how-title">
+        <div class="container">
+          <h2 id="how-title">How it works</h2>
+          <ol class="steps">
+            <li>
+              <span class="step-num">1</span>
+              <div>
+                <h3>Tell us your need</h3>
+                <p>Choose a service, time, and share patient details securely.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <div>
+                <h3>We assign a professional</h3>
+                <p>Matched to your location and requirement, fully verified.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <div>
+                <h3>Care at your home</h3>
+                <p>Get quality care with clear pricing and receipts.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="booking" class="section" aria-labelledby="booking-title">
+        <div class="container">
+          <h2 id="booking-title">Book a home visit</h2>
+          <p class="section-lead">We respond within minutes for urgent requests.</p>
+          <form id="booking-form" class="form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+                <small class="error" data-error-for="fullName"></small>
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91-XXXXXXXXXX" required />
+                <small class="error" data-error-for="phone"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="address">Address</label>
+                <input id="address" name="address" type="text" autocomplete="street-address" required />
+                <small class="error" data-error-for="address"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Nursing care</option>
+                  <option>Physiotherapy</option>
+                  <option>Diagnostics</option>
+                  <option>Medication delivery</option>
+                </select>
+                <small class="error" data-error-for="service"></small>
+              </div>
+              <div class="field">
+                <label for="datetime">Preferred date & time</label>
+                <input id="datetime" name="datetime" type="datetime-local" required />
+                <small class="error" data-error-for="datetime"></small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="notes">Notes (optional)</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Any conditions, allergies, or special instructions"></textarea>
+              </div>
+            </div>
+            <div class="form-row form-actions">
+              <label class="checkbox">
+                <input id="consent" name="consent" type="checkbox" required />
+                <span>I agree to the processing of my data for service delivery.</span>
+              </label>
+              <button type="submit" class="btn btn-primary">Request visit</button>
+            </div>
+            <p class="form-result" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <div class="faq">
+            <details>
+              <summary>Are your professionals verified?</summary>
+              <div>
+                Yes. We verify identity, qualifications, and background for every professional.
+              </div>
+            </details>
+            <details>
+              <summary>Do you handle emergencies?</summary>
+              <div>
+                For life-threatening emergencies, call your local emergency number first. We provide urgent at-home support when appropriate.
+              </div>
+            </details>
+            <details>
+              <summary>Which cities do you serve?</summary>
+              <div>
+                Initially major metro areas; enter your address at booking to confirm coverage.
+              </div>
+            </details>
+            <details>
+              <summary>How is pricing calculated?</summary>
+              <div>
+                Transparent pricing by service type, duration, and distance. No hidden fees.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 id="testimonials-title">What families say</h2>
+          <div class="quotes">
+            <figure>
+              <blockquote>
+                “CareNow made recovery at home possible for my mother. Professional and kind.”
+              </blockquote>
+              <figcaption>— Aarti, Mumbai</figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “Fast booking and a great physiotherapist. Saw improvement in a week.”
+              </blockquote>
+              <figcaption>— Raghav, Bengaluru</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt" aria-labelledby="contact-title">
+        <div class="container contact">
+          <h2 id="contact-title">Contact</h2>
+          <p><strong>24/7 helpline:</strong> <a href="tel:+918000000000">+91 80000 00000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:support@carenow.health">support@carenow.health</a></p>
+          <p><strong>Address:</strong> 101 CareNow Ave, Health District</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> CareNow Health Pvt. Ltd.</p>
+        <nav aria-label="Legal">
+          <a href="#" aria-disabled="true">Privacy</a>
+          <a href="#" aria-disabled="true">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
